@@ -1,106 +1,216 @@
 <!DOCTYPE html>
-<!-- saved from url=(0030)https://www.meaghanwagner.com/ -->
-<html lang="en-US">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meaghan Wagner</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-<head style="">
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <base href=".">
-  <title>Meaghan Wagner</title>
-  <link rel="canonical" href="https://www.meaghanwagner.github.io/">
-  <meta property="og:site_name" content="Meaghan Wagner">
-  <meta property="og:title" content="Meaghan Wagner">
-  <meta property="og:url" content="https://www.meaghanwagner.github.io">
-  <meta property="og:type" content="website">
-  <meta itemprop="name" content="Meaghan Wagner">
-  <meta itemprop="url" content="https://www.meaghanwagner.github.io">
-  <meta name="twitter:title" content="Meaghan Wagner">
-  <meta name="twitter:url" content="https://www.meaghanwagner.github.io">
-  <meta name="twitter:card" content="summary">
-  <meta name="description" content="">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="style/main.css">
-  <script src="scripts/main.js"></script>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background: #fdfcfa;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 60px 30px;
+        }
+
+        header {
+            margin-bottom: 60px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 20px;
+            letter-spacing: -0.5px;
+        }
+
+        .tagline {
+            font-size: 1.25rem;
+            color: #5a6c7d;
+            margin-bottom: 30px;
+        }
+
+        .intro {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            margin-bottom: 50px;
+            color: #3d4852;
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: #1a1a1a;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .trades-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 30px;
+        }
+
+        .trade-tag {
+            background: #e8f4f8;
+            color: #2c5f7a;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.2s ease;
+        }
+
+        .trade-tag:hover {
+            background: #d4e9f2;
+            transform: translateY(-2px);
+        }
+
+        .trade-section {
+            scroll-margin-top: 30px;
+        }
+
+        .trade-section p {
+            color: #3d4852;
+            line-height: 1.7;
+            font-size: 1.05rem;
+        }
+
+        .inline-link {
+            color: #2c5f7a;
+            text-decoration: none;
+            border-bottom: 1px solid #2c5f7a;
+            transition: opacity 0.2s ease;
+        }
+
+        .inline-link:hover {
+            opacity: 0.7;
+        }
+
+        .cta {
+            background: #f8f9fa;
+            padding: 35px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .cta h2 {
+            margin-bottom: 15px;
+        }
+
+        .cta p {
+            color: #5a6c7d;
+            margin-bottom: 25px;
+            font-size: 1.05rem;
+        }
+
+        .email-link {
+            display: inline-block;
+            background: #2c5f7a;
+            color: white;
+            padding: 14px 32px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: background 0.2s ease;
+        }
+
+        .email-link:hover {
+            background: #234a5e;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 40px 20px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .tagline {
+                font-size: 1.1rem;
+            }
+
+            .intro {
+                font-size: 1rem;
+            }
+        }
+    </style>
 </head>
-
 <body>
-  <header>
-    <div class="wrapper">
-      <div class="nav-flex">
-        <a class="branding" href="/">Meaghan Wagner</a>
-        <a href="javascript:void(0);" class="icon" onclick="burgerToggle()">
-          <i class="fa fa-bars"></i>
-        </a>
-        <div class="header-nav">
-          <a class="header-nav-item" href="new-years-revolution">New Year’s Revolution</a>
-          <div class="dropdown header-nav-item">
-            <a>Work with Me</a>
-            <div class="dropdown-content">
-              <a href="work-with-me#accountability-groups">Accountability Groups</a>
-              <a href="work-with-me#private-coaching">1:1 Coaching</a>
-            </div>
-          </div>
-          <a class="header-nav-item" href="faq">FAQ</a>
-        </div>
-      </div>
-    </div>
-  </header>
-  <main>
-    <div class="wrapper">
-      <figure class="flex">
-        <div class="half">
-          <div class="main-image">
-            <img src="images/DSCF0314.jpg" alt="Head shot of Meaghan Wagner">
-          </div>
-        </div>
-        <figcaption class="card-wrapper">
-          <div class="min-width">
-            <h1 class="card-title">The Optimism</h1>
-            <p class="card-subtitle">She who optimizes.</p>
-          </div>
-        </figcaption>
-      </figure>
-      <section class="tools">
-        <div class="tools-header">
-          <h2>Join the New Year’s Revolution</h2>
-          <p class="tools-subtitle">Set goals you can actually keep with <strong>The Optimist</strong> workshop series.</p>
-        </div>
-        <div class="tools-box">
-          <div class="tool important shiny">
-            <a href="new-years-revolution#vision">
-              <h3 class="tool-header">Create a Vision</h3>
-              <p class="tool-description">The first step in getting what you want is <em>knowing</em> what you want. Try the first step of the New Year’s Revolution for <strong>FREE</strong> and create a concrete vision for your future.</p>
-            </a>
-          </div>
-          <div class="tool">
-            <a href="new-years-revolution#goals">
-              <h3 class="tool-header">Soften Your SMART Goals</h3>
-              <p class="tool-description">Everyone loves a SMART goal&#8239;.&#8239;.&#8239;. until they try to meet them. Learn the key to creating goals that fit your life.</p>
-            </a>
-          </div>
-          <div class="tool">
-            <a href="new-years-revolution#granular">
-              <h3 class="tool-header">Get Granular</h3>
-              <p class="tool-description">What gets scheduled gets done. Join the final installment of the New Year’s Revolution series to think through how your biggest, boldest goals fits into your daily life</p>
-            </a>
-          </div>
-        </div>
-      </section>
-      <section class="testimonials blue-box pad-10">
-        <p class="quote">“Meaghan will bring order to your thoughts. She has a true talent for helping you move forward on a path that leverages your unique strengths and make the contribution only you can. I can’t recommend her highly enough!”</p>
-        <p class="quote-by">- Melody Wilding, Professor and Coach</p>
-      </section>
-      <section class="questions pad-20">
-        <h2><a href="faq">Got questions?</a></h2>
-      </section>
-    </div>
-  </main>
-  <footer>
-    <div class="wrapper">
-      <p>© Meaghan Wagner</p>
-    </div>
-  </footer>
-</body>
+    <div class="container">
+        <header>
+            <h1>Hi, I'm Meaghan</h1>
+            <div class="tagline">jane of all trades</div>
+        </header>
 
+        <div class="intro">
+            <p>Words, ideas, and the people behind them—that's where things get interesting. My work lives at the intersection of editing and ghostwriting, coaching through transitions, and building projects that blend creativity with curiosity.</p>
+        </div>
+
+        <section>
+            <h2>The trades</h2>
+            <div class="trades-list">
+                <a href="#ghostwriting" class="trade-tag">Ghostwriting</a>
+                <a href="#editing" class="trade-tag">Editing</a>
+                <a href="#moonpaws" class="trade-tag">Building moonpaws</a>
+                <a href="#coaching" class="trade-tag">Coaching</a>
+                <a href="#creative" class="trade-tag">Creative writing</a>
+            </div>
+        </section>
+
+        <section id="ghostwriting" class="trade-section">
+            <h2>Ghostwriting</h2>
+            <p>Got an idea rattling around in your head that needs to become a book, essay, or something else entirely? That's where ghostwriting comes in—finding the structure and language that makes your vision real and gets it onto the page.</p>
+        </section>
+
+        <section id="editing" class="trade-section">
+            <h2>Editing</h2>
+            <p>Developmental editing is about clarifying what you're actually trying to say. The work happens at the structural level—narrative arc, argument flow, whether the pieces fit together in a way that serves the whole. Sometimes it's more excavation than correction.</p>
+        </section>
+
+        <section id="moonpaws" class="trade-section">
+            <h2>Building moonpaws</h2>
+            <p>What if you could understand your dog through an astrological lens? That's <a href="https://moonpaws.com" target="_blank" class="inline-link">moonpaws</a>—a pet astrology app and content platform built with a lot of heart (and a healthy dose of whimsy). Co-running this project means writing newsletters, creating astrological guidance for dog parents, and generally making the internet a more delightful place for people who love their pups. <a href="https://moonpaws.com" target="_blank" class="inline-link">Download the app</a> if you're curious what the stars say about your furry friend.</p>
+        </section>
+
+        <section id="coaching" class="trade-section">
+            <h2>Coaching</h2>
+            <p>Transitions, overwhelm, the question of what comes next—coaching is for when you need clarity in the mess. As an ACC-certified coach, the approach here is less about goal-setting checklists and more about figuring out what's actually true for you right now.</p>
+        </section>
+
+        <section id="creative" class="trade-section">
+            <h2>Creative writing</h2>
+            <p>"Dana's Inferno" is a retelling of Dante's Inferno from women's perspectives—the kind of project that simmers on the back burner until it demands attention. There's also a <a href="https://practicalmagic.substack.com" target="_blank" class="inline-link">Substack archive</a> on astrology and being human, currently on hiatus while it waits for its next direction.</p>
+        </section>
+
+        <div class="cta">
+            <h2>Got a cool idea?</h2>
+            <p>I'm always up for interesting conversations and collaborations.</p>
+            <a href="mailto:hello@meaghanwagner.com" class="email-link">Get in touch</a>
+        </div>
+
+
+    </div>
+</body>
 </html>
