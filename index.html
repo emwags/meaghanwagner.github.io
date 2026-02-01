@@ -149,6 +149,9 @@
             font-weight: 600;
             font-size: 1rem;
             transition: background 0.2s ease;
+            border: none;
+            cursor: pointer;
+            font-family: inherit;
         }
 
         .email-link:hover {
@@ -233,8 +236,22 @@
         <div class="cta">
             <h2>Got a cool idea?</h2>
             <p>I'm always up for interesting conversations and collaborations.</p>
-            <a href="mailto:meaghan.wagner@gmail.com" class="email-link">Get in touch</a>
+            <button id="emailButton" class="email-link">Get in touch</button>
         </div>
+
+        <script>
+            document.getElementById('emailButton').addEventListener('click', function() {
+                const email = 'meaghan.wagner@gmail.com';
+                navigator.clipboard.writeText(email).then(function() {
+                    const button = document.getElementById('emailButton');
+                    const originalText = button.textContent;
+                    button.textContent = 'Email copied!';
+                    setTimeout(function() {
+                        button.textContent = originalText;
+                    }, 2000);
+                });
+            });
+        </script>
 
 
     </div>
