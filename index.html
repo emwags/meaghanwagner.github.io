@@ -26,6 +26,21 @@
 
         header {
             margin-bottom: 60px;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .profile-image {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+
+        .header-text {
+            flex: 1;
         }
 
         h1 {
@@ -143,6 +158,12 @@
                 padding: 40px 20px;
             }
 
+            header {
+                flex-direction: column;
+                text-align: center;
+                gap: 20px;
+            }
+
             h1 {
                 font-size: 2rem;
             }
@@ -160,8 +181,11 @@
 <body>
     <div class="container">
         <header>
-            <h1>Hi, I'm Meaghan</h1>
-            <div class="tagline">jane of all trades</div>
+            <img src="profile.jpg" alt="Meaghan Wagner" class="profile-image">
+            <div class="header-text">
+                <h1>Hi, I'm Meaghan</h1>
+                <div class="tagline">jane of all trades</div>
+            </div>
         </header>
 
         <div class="intro">
